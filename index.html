@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div>
-        <button id="converter-button">Type a temperature</button>
-    </div>
-    <div id="converter-output"></div>
+    <div class="container-fluid justify-content-center align-items-center"> 
+        <div class="wrapper">
+            <h1>Temperature Converter <i class="fas fa-thermometer-half"></i></h1>
+            <!-- Celsius -->
+            <div><button id="converter-buttonC" type="button" class="btn btn-danger btn-lg">Type a temperature in Celsius</button></div>
+            <div id="converter-alertC"></div>
+            <div class="output" id="converter-outputC"></div>
+            <!-- Fahrenheit -->
+            <div><button id="converter-buttonF" type="button" class="btn btn-warning btn-lg">Type a temperature in Fahrenheit</button></div>
+            <div id="converter-alertF"></div>
+            <div class="output" id="converter-outputF"></div>
+        </div>
+    </div> 
     <script src="js/script.js"></script>
 </body>
 </html>
